@@ -101,8 +101,8 @@ public class ED_TP_EpR_2016 {
 
         Dijkstra mp = new Dijkstra();
 
-        /*mp.apresenta_caminho_barato(Pentos, Crossroads_Inn);*/
-       mp.apresenta_caminho_curto((Cidade) network.getVertices()[0], (Cidade) network.getVertices()[1]);
+        mp.apresenta_caminho_curto((Cidade) network.getVertices()[0], (Cidade) network.getVertices()[3]);
+       //mp.apresenta_caminho_curto((Cidade) network.getVertices()[0], (Cidade) network.getVertices()[3]);
     }
 
     public static void setAdjacencias(Cidade cidade) throws EmptyCollectionException {

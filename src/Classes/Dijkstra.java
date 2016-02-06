@@ -25,7 +25,7 @@ public class Dijkstra<T> {
                     double weight = e.getKms();
                     double distanceThroughU = u.getMinDistance() + weight;
                     if (distanceThroughU < v.getMinDistance()) {
-                        cidadesQueue.remove(v);
+                        //cidadesQueue.remove(v);
 
                         v.setMinDistance(distanceThroughU);
                         v.setPrevious(u);
@@ -33,6 +33,7 @@ public class Dijkstra<T> {
                     }
                 }
             }
+            cidadesQueue.remove(u);
         }
     }
 

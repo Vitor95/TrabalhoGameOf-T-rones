@@ -54,7 +54,9 @@ public class DataManagement implements DataManagementADT {
                 if (dadosArray[0].compareTo("") != 0) {
 
                     cidadeOrigem = new Cidade(dadosArray[0], Integer.parseInt(dadosArray[1]));
-                    cidadeDestino = new Cidade(dadosArray[2], 0);
+                    
+                    
+          
 
                     //adicionar cidades
                     networkADT.addVertex(cidadeOrigem);
